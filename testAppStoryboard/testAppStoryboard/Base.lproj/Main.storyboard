@@ -17,19 +17,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yy-2L-zJd">
-                                <rect key="frame" x="159" y="745" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yy-2L-zJd">
+                                <rect key="frame" x="159" y="758.66666666666663" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="73E-Lo-iJI"/>
+                                    <constraint firstAttribute="width" constant="75" id="KnW-Ah-yJ5"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sun.max" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="i64-kw-wmI">
-                                <rect key="frame" x="127" y="181" width="138" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="sun.max" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="i64-kw-wmI">
+                                <rect key="frame" x="146.66666666666666" y="376" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0FS-hX-zV1"/>
+                                    <constraint firstAttribute="height" constant="100" id="gCU-RA-hLS"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i64-kw-wmI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BeA-fS-OfE"/>
+                            <constraint firstItem="3Yy-2L-zJd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="350" id="Ero-V6-KUf"/>
+                            <constraint firstItem="3Yy-2L-zJd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QN7-0w-4pO"/>
+                            <constraint firstItem="i64-kw-wmI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aym-wI-Hot"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="changeButton" destination="3Yy-2L-zJd" id="67P-wB-LP9"/>
