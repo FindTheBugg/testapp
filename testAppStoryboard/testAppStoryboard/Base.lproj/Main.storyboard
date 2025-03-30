@@ -18,13 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yy-2L-zJd">
-                                <rect key="frame" x="159" y="758.66666666666663" width="75" height="35"/>
+                                <rect key="frame" x="121.66666666666669" y="758.66666666666663" width="150" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="73E-Lo-iJI"/>
-                                    <constraint firstAttribute="width" constant="75" id="KnW-Ah-yJ5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="uIc-kC-nVh"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Нажми меня"/>
+                                <connections>
+                                    <action selector="buttonDidtap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CeM-vU-8bJ"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="sun.max" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="i64-kw-wmI">
                                 <rect key="frame" x="146.66666666666666" y="376" width="100" height="100"/>
